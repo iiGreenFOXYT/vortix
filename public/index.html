@@ -44,17 +44,21 @@
     </header>
         <!-- Content -->
         <div id="container1">
-            <h1>Image Background Remover</h1>
-            <input type="file" id="imageInput" accept="image/*">
-            <button id="removeButton">Remove Background</button>
-            <div id="imageContainer">
-              <img id="previewImage" src="#" alt="Preview">
-            </div>
-            <div id="progressBar">
-              <div id="progressFill"></div>
-            </div>
-            <div id="result"></div>
-          </div>        
+          <h1>Image Background Remover</h1>
+          <input type="file" id="imageInput" accept="image/*">
+          <button id="removeButton">Remove Background</button>
+          <div id="imageContainer">
+            <img id="previewImage" src="#" alt="Preview">
+          </div>
+          <div id="progressBar">
+            <div id="progressFill"></div>
+          </div>
+          <div id="result">
+            <img id="removedImage" src="#" alt="Removed Background">
+            <button id="downloadButton">Download</button>
+          </div>
+        </div>
+      
         <!-- js sources important -->
         <script src="main.js"></script>
         <script type="module">
