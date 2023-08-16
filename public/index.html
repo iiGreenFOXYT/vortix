@@ -3,12 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="PAGE description1" />
+        <meta name="description" content="Experience seamless photo editing with PhotoKing. Convert formats, enhance quality, create pixel art, and more. Try it today!" />
         <meta name="keywords" content="kaywords">
         <link rel = "icon" href ="/photoking/public/assets/PhotoKing_Logo.png" type = "image/x-icon">
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="link description2" />
-        <meta property="og:image" content="PAGE LINK BANNER">
+        <meta property="og:type" content="iigreenfoxyt.github.io/photoking" />
+        <meta property="og:url" content="Experience seamless photo editing with PhotoKing. Convert formats, enhance quality, create pixel art, and more. Try it today!" />
+        <meta property="og:image" content="/photoking/public/assets/PhotoKing_Logo.png">
         <meta name="theme-color" content="#05ECEC">
         <meta name="twitter:card" content="summary_large_image">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
@@ -45,11 +45,12 @@
         <!-- Content -->
         <div id="container1">
           <h1>Image Background Remover</h1>
-            <input type="file" id="imageInput" class="custom-file-upload" accept="image/*">
-          <button id="removeButton">Remove Background</button>
+          <label for="imageInput" class="custom-file-upload">Choose File</label>
+            <input type="file" id="imageInput" accept="image/*" style="display: none;">
           <div id="imageContainer">
-            <img id="previewImage" src="https://iigreenfoxyt.github.io/photoking/public/assets/PhotoKing_Logo.png" alt="Preview">
+            <img id="previewImage" src="#" alt="Preview">
           </div>
+          <button id="removeButton">Remove Background</button>
           <div id="progressBar">
             <div id="progressFill"></div>
           </div>
