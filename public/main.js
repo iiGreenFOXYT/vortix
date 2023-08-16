@@ -19,7 +19,8 @@ const theBody = document.querySelector('body');
 
         openNav.onclick = showHide;
         closeNav.onclick = showHide;
-//
+
+
 
 document.addEventListener("DOMContentLoaded", () => {
   const imageInput = document.getElementById("imageInput");
@@ -37,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    const apiKey = "3FYJwQMAdNc1SKoQpHU92iZN"; // Replace with your actual remove.bg API key
+    const apiKey = "3FYJwQMAdNc1SKoQpHU92iZN"; 
     const imageFile = imageInput.files[0];
 
     const formData = new FormData();
@@ -75,7 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
   downloadButton.addEventListener("click", () => {
     const link = document.createElement("a");
     link.href = removedImage.src;
-    link.download = "removed_background.png"; // Set the desired filename
+    link.download = "removed_background.png";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
