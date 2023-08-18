@@ -34,7 +34,7 @@ header .wrapper {
 }
 
 header .logo img {
-  height: 50px;
+  height: 48px;
   display: block;
   box-shadow:none 3px 3px 3px;
   transition: box-shadow 0.5s;
