@@ -91,3 +91,33 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+
+const textElement = document.getElementById("typingText");
+const textLines = textElement.innerHTML.split("<br>");
+
+textElement.textContent = ""; // Clear the text content
+
+let lineIndex = 0;
+let letterIndex = 0;
+
+function typeNextLetter() {
+  if (lineIndex < textLines.length) {
+    const line = textLines[lineIndex];
+    if (letterIndex < line.length) {
+      textElement.innerHTML += line[letterIndex];
+      letterIndex++;
+      setTimeout(typeNextLetter, 50); // Adjust the delay as needed
+    } else {
+      lineIndex++;
+      letterIndex = 0;
+      textElement.innerHTML += "<br>";
+      setTimeout(typeNextLetter, 300); // Add a longer delay between lines
+    }
+  }
+}
+
+typeNextLetter();
+
+
+
