@@ -417,3 +417,14 @@ button {
   width:130px;
   border-radius: 5px;
 }
+
+footer{
+    background-color: #1b1b1b;
+    padding: 10px; 
+    color: #ffffff;
+    text-align: center;
+}
+
+footer span {
+  color: #00ffd5;
+}
