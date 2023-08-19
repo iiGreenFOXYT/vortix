@@ -346,23 +346,40 @@ button {
       
     }
   }
-  .Notfi{
-    background-color: #00aeff;
-    box-shadow: 1px 1px 1px 1px  #00000023;
-    height: 45px;
+
+  /* The alert message box */
+.alert {
+  padding: 10px;
+  background-color: #18d1c2; /* Red */
+  color: white;
+  margin-bottom: 1px;
+  animation: alertSlideDown 0.3s ease-in-out forwards;
 }
-.Tit-note h3{
-    display: inline-block;
-    color: #ffffff;
-    font-size: 17px;
-    font-weight: bold;
-    margin-left: 12px;
-    margin-top: 12px;
-}
-@media (max-width: 768px) {
-  .Notfi {
-    height: auto;
+@keyframes alertSlideDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
   }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+
+.closebtn:hover {
+  color: black;
 }
 
   .button {
@@ -426,5 +443,5 @@ footer{
 }
 
 footer span {
-  color: #00ffd5;
+    color: #00ffd5;
 }
