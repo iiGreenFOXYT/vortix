@@ -17,31 +17,27 @@ body {
   min-height: 100vh;
 }
 
-header {
-  background-color: #ffffff;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-              0 4px 6px -4px rgba(0, 0, 0, 0.1);
-  padding: 10px 20px;
-}
 
 header .wrapper {
-  max-width: 1000px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  background-color: #222222;
+  height: 70px;
 }
 
 header .logo img {
-  height: 48px;
+  height: 50px;
   display: block;
   box-shadow:none 3px 3px 3px;
   transition: box-shadow 0.5s;
+  margin-left: 20px ;
 }
 
 header .logo img:hover {
-  box-shadow: #080808bb 3px 3px 3px;
+  box-shadow: #ffffffbb 3px 3px 3px;
 }
 
 .navbar {
@@ -51,7 +47,7 @@ header .logo img:hover {
   margin: 0;
   width: 100%;
   height: 100%;
-  background-color: white;
+  background-color: rgb(43, 43, 43);
   padding: 20px;
   transition: left 0.3s;
 }
@@ -70,21 +66,22 @@ header .logo img:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 25px;
+  gap: 30px;
 }
 
 .navbar ul a {
   all: unset;
-  color: #444444;
+  color: #ffffff;
   text-transform: uppercase;
   cursor: pointer;
   font-weight: bold;
   font-size: 28px;
   transition: color 0.5s, text-decoration 0.4s;
+  margin-right: 20px;
 }
 
 .navbar ul a:hover {
-  color: #111111;
+  color: #007c92;
   text-decoration: underline overline;
   text-decoration-thickness: 3px;
 }
@@ -96,7 +93,7 @@ header .logo img:hover {
 
 .close-nav button {
   all: unset;
-  background: #f7f7f7;
+  background: #f7f7f779;
   font-size: 42px;
   cursor: pointer;
   border: 1px solid rgba(0, 0, 0, 0.2);
@@ -318,10 +315,10 @@ button {
     padding-top: 1rem;
     display: inline-block;
     white-space: nowrap;
-   overflow: hidden;
-   border-right: 0.15em solid #007bff;
-   animation: slideLeft1 0.5s ease-in-out 0.2s forwards;
-   animation: typing 4s steps(1, end), blink-caret 0.75s step-end infinite;
+    overflow: hidden;
+    border-right: 0.15em solid #007bff;
+    animation: slideLeft1 0.5s ease-in-out 0.2s forwards;
+    animation: typing 4s steps(1, end), blink-caret 0.75s step-end infinite;
   }
   
   @keyframes typing {
@@ -350,17 +347,22 @@ button {
     }
   }
   .Notfi{
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius:60px;
     background-color: #00aeff;
-    padding-left: 12px;
     box-shadow: 1px 1px 1px 1px  #00000023;
+    height: 45px;
 }
-.Tit-note{
-  display: inline-block;
+.Tit-note h3{
+    display: inline-block;
     color: #ffffff;
     font-size: 17px;
     font-weight: bold;
+    margin-left: 12px;
+    margin-top: 12px;
+}
+@media (max-width: 768px) {
+  .Notfi {
+    height: auto;
+  }
 }
 
   .button {
