@@ -121,3 +121,21 @@ typeNextLetter();
 
 
 
+const observerOptions = {
+  root: null,
+  rootMargin: '0px',
+  threshold: 0.2
+};
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+      if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+          observer.unobserve(entry.target);
+      }
+  });
+}, observerOptions);
+
+document.querySelectorAll('.box, .bx, .bx-info').forEach(item => {
+  observer.observe(item);
+});
