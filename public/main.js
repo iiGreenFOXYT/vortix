@@ -67,3 +67,8 @@ const observer = new IntersectionObserver(entries => {
 document.querySelectorAll('.box, .bx, .bx-info').forEach(item => {
   observer.observe(item);
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Page content is fully loaded, hide the loading overlay
+  document.querySelector(".loading-overlay").style.display = "none";
+});
